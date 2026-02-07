@@ -1,0 +1,38 @@
+# Environment
+.env
+venv/
+.venv/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+
+# Data
+data/*.db
+data/*.db-shm
+data/*.db-wal
+data/*.json
+*.gz
+*.tar.gz
+*.json
+!.env.example
+
+# Logs
+logs/*.log
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Claude
+.claude/

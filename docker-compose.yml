@@ -1,0 +1,12 @@
+services:
+  manoli:
+    build: .
+    container_name: manoli-bot
+    restart: unless-stopped
+    ports:
+      - "${API_PORT:-8000}:8000"
+    volumes:
+      - ./data:/app/data
+      - ./logs:/app/logs
+    env_file:
+      - .env
